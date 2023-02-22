@@ -1,0 +1,343 @@
+<global>
+ sample=SolfeSinger_001.wav
+ ampeg_decay=8 ampeg_sustain=10
+<region>
+ lokey=24 hikey=24 pitch_keycenter=48
+ offset=148067 end=677778
+ volume=22.469828581087626
+<region>
+ lokey=25 hikey=25 pitch_keycenter=49
+ offset=677257 end=1206968
+ volume=21.354784994334782
+<region>
+ lokey=26 hikey=26 pitch_keycenter=50
+ offset=1206448 end=1736159
+ volume=18.690398112301434
+<region>
+ lokey=27 hikey=27 pitch_keycenter=51
+ offset=1735638 end=2265349
+ volume=19.390894051338442
+<region>
+ lokey=28 hikey=28 pitch_keycenter=52
+ offset=2264829 end=2794540
+ volume=19.753257026827058
+<region>
+ lokey=29 hikey=29 pitch_keycenter=53
+ offset=2794019 end=3323730
+ volume=15.866241638172507
+<region>
+ lokey=30 hikey=30 pitch_keycenter=54
+ offset=3323210 end=3852921
+ volume=18.0317580284514
+<region>
+ lokey=31 hikey=31 pitch_keycenter=55
+ offset=3852401 end=4382112
+ volume=15.14407985477608
+<region>
+ lokey=32 hikey=32 pitch_keycenter=56
+ offset=4381591 end=4911302
+ volume=12.708727754397328
+<region>
+ lokey=33 hikey=33 pitch_keycenter=57
+ offset=4910782 end=5440493
+ volume=13.57651594183357
+<region>
+ lokey=34 hikey=34 pitch_keycenter=58
+ offset=5439972 end=5969683
+ volume=15.58192785855002
+<region>
+ lokey=35 hikey=35 pitch_keycenter=59
+ offset=5969163 end=6498874
+ volume=12.698412555267616
+<region>
+ lokey=36 hikey=36 pitch_keycenter=48
+ offset=148067 end=677778
+ volume=22.469828581087626
+<region>
+ lokey=37 hikey=37 pitch_keycenter=49
+ offset=677257 end=1206968
+ volume=21.354784994334782
+<region>
+ lokey=38 hikey=38 pitch_keycenter=50
+ offset=1206448 end=1736159
+ volume=18.690398112301434
+<region>
+ lokey=39 hikey=39 pitch_keycenter=51
+ offset=1735638 end=2265349
+ volume=19.390894051338442
+<region>
+ lokey=40 hikey=40 pitch_keycenter=52
+ offset=2264829 end=2794540
+ volume=19.753257026827058
+<region>
+ lokey=41 hikey=41 pitch_keycenter=53
+ offset=2794019 end=3323730
+ volume=15.866241638172507
+<region>
+ lokey=42 hikey=42 pitch_keycenter=54
+ offset=3323210 end=3852921
+ volume=18.0317580284514
+<region>
+ lokey=43 hikey=43 pitch_keycenter=55
+ offset=3852401 end=4382112
+ volume=15.14407985477608
+<region>
+ lokey=44 hikey=44 pitch_keycenter=56
+ offset=4381591 end=4911302
+ volume=12.708727754397328
+<region>
+ lokey=45 hikey=45 pitch_keycenter=57
+ offset=4910782 end=5440493
+ volume=13.57651594183357
+<region>
+ lokey=46 hikey=46 pitch_keycenter=58
+ offset=5439972 end=5969683
+ volume=15.58192785855002
+<region>
+ lokey=47 hikey=47 pitch_keycenter=59
+ offset=5969163 end=6498874
+ volume=12.698412555267616
+<region>
+ lokey=48 hikey=48 pitch_keycenter=48
+ offset=148067 end=677778
+ volume=22.469828581087626
+<region>
+ lokey=49 hikey=49 pitch_keycenter=49
+ offset=677257 end=1206968
+ volume=21.354784994334782
+<region>
+ lokey=50 hikey=50 pitch_keycenter=50
+ offset=1206448 end=1736159
+ volume=18.690398112301434
+<region>
+ lokey=51 hikey=51 pitch_keycenter=51
+ offset=1735638 end=2265349
+ volume=19.390894051338442
+<region>
+ lokey=52 hikey=52 pitch_keycenter=52
+ offset=2264829 end=2794540
+ volume=19.753257026827058
+<region>
+ lokey=53 hikey=53 pitch_keycenter=53
+ offset=2794019 end=3323730
+ volume=15.866241638172507
+<region>
+ lokey=54 hikey=54 pitch_keycenter=54
+ offset=3323210 end=3852921
+ volume=18.0317580284514
+<region>
+ lokey=55 hikey=55 pitch_keycenter=55
+ offset=3852401 end=4382112
+ volume=15.14407985477608
+<region>
+ lokey=56 hikey=56 pitch_keycenter=56
+ offset=4381591 end=4911302
+ volume=12.708727754397328
+<region>
+ lokey=57 hikey=57 pitch_keycenter=57
+ offset=4910782 end=5440493
+ volume=13.57651594183357
+<region>
+ lokey=58 hikey=58 pitch_keycenter=58
+ offset=5439972 end=5969683
+ volume=15.58192785855002
+<region>
+ lokey=59 hikey=59 pitch_keycenter=59
+ offset=5969163 end=6498874
+ volume=12.698412555267616
+<region>
+ lokey=60 hikey=60 pitch_keycenter=60
+ offset=6498354 end=7028065
+ volume=13.27258464365141
+<region>
+ lokey=61 hikey=61 pitch_keycenter=61
+ offset=7027544 end=7557255
+ volume=15.569151221181937
+<region>
+ lokey=62 hikey=62 pitch_keycenter=62
+ offset=7556735 end=8086446
+ volume=10.969186267902105
+<region>
+ lokey=63 hikey=63 pitch_keycenter=63
+ offset=8085925 end=8615636
+ volume=13.978718179568617
+<region>
+ lokey=64 hikey=64 pitch_keycenter=64
+ offset=8615116 end=9144827
+ volume=15.128898913941299
+<region>
+ lokey=65 hikey=65 pitch_keycenter=65
+ offset=9144306 end=9674017
+ volume=8.35948682932809
+<region>
+ lokey=66 hikey=66 pitch_keycenter=66
+ offset=9673497 end=10203208
+ volume=10.745107737865517
+<region>
+ lokey=67 hikey=67 pitch_keycenter=67
+ offset=10202688 end=10732399
+ volume=9.20277631576944
+<region>
+ lokey=68 hikey=68 pitch_keycenter=68
+ offset=10731878 end=11261589
+ volume=9.157765502283507
+<region>
+ lokey=69 hikey=69 pitch_keycenter=69
+ offset=11261069 end=11790780
+ volume=8.510677927102867
+<region>
+ lokey=70 hikey=70 pitch_keycenter=70
+ offset=11790259 end=12319970
+ volume=10.640623700666923
+<region>
+ lokey=71 hikey=71 pitch_keycenter=71
+ offset=12319450 end=12849161
+ volume=10.933614197800372
+<region>
+ lokey=72 hikey=72 pitch_keycenter=72
+ offset=12848641 end=13378352
+ volume=10.225386393476953
+<region>
+ lokey=73 hikey=73 pitch_keycenter=73
+ offset=13377831 end=13907542
+ volume=12.760488942587244
+<region>
+ lokey=74 hikey=74 pitch_keycenter=74
+ offset=13907022 end=14436733
+ volume=12.364728704001617
+<region>
+ lokey=75 hikey=75 pitch_keycenter=75
+ offset=14436212 end=14965923
+ volume=11.051182287554148
+<region>
+ lokey=76 hikey=76 pitch_keycenter=76
+ offset=14965403 end=15495114
+ volume=10.26161555949747
+<region>
+ lokey=77 hikey=77 pitch_keycenter=77
+ offset=15494593 end=16024304
+ volume=9.261873509350268
+<region>
+ lokey=78 hikey=78 pitch_keycenter=78
+ offset=16023784 end=16553495
+ volume=12.752416845590197
+<region>
+ lokey=79 hikey=79 pitch_keycenter=79
+ offset=16552975 end=17082686
+ volume=11.67644471081337
+<region>
+ lokey=80 hikey=80 pitch_keycenter=80
+ offset=17082165 end=17611876
+ volume=10.613573146636442
+<region>
+ lokey=81 hikey=81 pitch_keycenter=81
+ offset=17611356 end=18141067
+ volume=11.319500331084328
+<region>
+ lokey=82 hikey=82 pitch_keycenter=82
+ offset=18140546 end=18670257
+ volume=15.503965316644397
+<region>
+ lokey=83 hikey=83 pitch_keycenter=83
+ offset=18669737 end=19199448
+ volume=18.087082805372187
+<region>
+ lokey=84 hikey=84 pitch_keycenter=84
+ offset=19198928 end=19728639
+ volume=20.490224995673064
+<region>
+ lokey=85 hikey=85 pitch_keycenter=73
+ offset=13377831 end=13907542
+ volume=12.760488942587244
+<region>
+ lokey=86 hikey=86 pitch_keycenter=74
+ offset=13907022 end=14436733
+ volume=12.364728704001617
+<region>
+ lokey=87 hikey=87 pitch_keycenter=75
+ offset=14436212 end=14965923
+ volume=11.051182287554148
+<region>
+ lokey=88 hikey=88 pitch_keycenter=76
+ offset=14965403 end=15495114
+ volume=10.26161555949747
+<region>
+ lokey=89 hikey=89 pitch_keycenter=77
+ offset=15494593 end=16024304
+ volume=9.261873509350268
+<region>
+ lokey=90 hikey=90 pitch_keycenter=78
+ offset=16023784 end=16553495
+ volume=12.752416845590197
+<region>
+ lokey=91 hikey=91 pitch_keycenter=79
+ offset=16552975 end=17082686
+ volume=11.67644471081337
+<region>
+ lokey=92 hikey=92 pitch_keycenter=80
+ offset=17082165 end=17611876
+ volume=10.613573146636442
+<region>
+ lokey=93 hikey=93 pitch_keycenter=81
+ offset=17611356 end=18141067
+ volume=11.319500331084328
+<region>
+ lokey=94 hikey=94 pitch_keycenter=82
+ offset=18140546 end=18670257
+ volume=15.503965316644397
+<region>
+ lokey=95 hikey=95 pitch_keycenter=83
+ offset=18669737 end=19199448
+ volume=18.087082805372187
+<region>
+ lokey=96 hikey=96 pitch_keycenter=84
+ offset=19198928 end=19728639
+ volume=20.490224995673064
+<region>
+ lokey=97 hikey=97 pitch_keycenter=73
+ offset=13377831 end=13907542
+ volume=12.760488942587244
+<region>
+ lokey=98 hikey=98 pitch_keycenter=74
+ offset=13907022 end=14436733
+ volume=12.364728704001617
+<region>
+ lokey=99 hikey=99 pitch_keycenter=75
+ offset=14436212 end=14965923
+ volume=11.051182287554148
+<region>
+ lokey=100 hikey=100 pitch_keycenter=76
+ offset=14965403 end=15495114
+ volume=10.26161555949747
+<region>
+ lokey=101 hikey=101 pitch_keycenter=77
+ offset=15494593 end=16024304
+ volume=9.261873509350268
+<region>
+ lokey=102 hikey=102 pitch_keycenter=78
+ offset=16023784 end=16553495
+ volume=12.752416845590197
+<region>
+ lokey=103 hikey=103 pitch_keycenter=79
+ offset=16552975 end=17082686
+ volume=11.67644471081337
+<region>
+ lokey=104 hikey=104 pitch_keycenter=80
+ offset=17082165 end=17611876
+ volume=10.613573146636442
+<region>
+ lokey=105 hikey=105 pitch_keycenter=81
+ offset=17611356 end=18141067
+ volume=11.319500331084328
+<region>
+ lokey=106 hikey=106 pitch_keycenter=82
+ offset=18140546 end=18670257
+ volume=15.503965316644397
+<region>
+ lokey=107 hikey=107 pitch_keycenter=83
+ offset=18669737 end=19199448
+ volume=18.087082805372187
+<region>
+ lokey=108 hikey=108 pitch_keycenter=84
+ offset=19198928 end=19728639
+ volume=20.490224995673064
