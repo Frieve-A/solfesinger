@@ -1,133 +1,143 @@
 # SolfeSinger
 
-Solfege sfz instrument.
+Japanese fixed-do solfege SFZ instruments (SolfeSinger 010 and 011), accepting all 88 piano keys (A0–C8 / MIDI 21–108). Playback needs only an SFZ player.
 
-(英語に続き日本語の解説があります)
+日本語の解説は英語の後にあります。 / Japanese follows English.
 
-![SolfeSinger](./images/SolfeSinger.png)
+![SolfeSinger](images/SolfeSinger.png)
 
-SolfeSinger is a solfeggio singing sfz instrument.
+## Download
 
-You can sing in Japanese do-re-mi based on the notes you play on your MIDI keyboard or input with your DAW.
-
-It can be used for practice for the purpose of learning the sense of pitch, content creation for solfege, etc.
-
-*Credit notation is not required for content created using SolfeSinger.
-
-<br>
+Download the latest zip from [GitHub Releases](https://github.com/Frieve-A/solfesinger/releases) and extract it, keeping its folder structure. Python, a GPU, and TTS models are not required for playback.
 
 ## How to use
 
-Latest version can be downloaded from the following page.
+Load one of the following presets into an SFZ player and play Japanese fixed-do solfege from a MIDI keyboard or DAW.
 
-https://github.com/Frieve-A/solfesinger/releases
+| Instrument | Sustain | Decay | Sample folder |
+| --- | --- | --- | --- |
+| SolfeSinger 010 | [SolfeSinger_010_sustain.sfz](SolfeSinger_010_sustain.sfz) | [SolfeSinger_010_decay.sfz](SolfeSinger_010_decay.sfz) | [samples/010](samples/010) |
+| SolfeSinger 011 | [SolfeSinger_011_sustain.sfz](SolfeSinger_011_sustain.sfz) | [SolfeSinger_011_decay.sfz](SolfeSinger_011_decay.sfz) | [samples/011](samples/011) |
 
-1. Unzip the downloaded zip file. No installation is required.
+Keep the SFZ files and the sample folders in their relative locations: the folder containing the SFZ must have `samples/010` or `samples/011` beneath it. When updating, replace both the SFZ files and the sample folders, then reload the instrument in your player.
 
-2. Open the included sfz file from an sfz compatible application.
+`sustain` holds the vowel; `decay` fades out over about 3.5 seconds. Note-off release is 0.14 seconds, and the instruments respond to velocity. C4 is MIDI 60; A4 is MIDI 69 / 440 Hz.
 
-<br>
+### Regular and `_fold` presets
 
-SolfeSinger has been tested to work with Plogue Sforzando.
+Each voice has per-pitch samples for C3–F6 / MIDI 48–89. Other keys play a sample of the same syllable at a faster or slower speed.
 
-It is recommended to use SolfeSinger with Sforzando as the host application.
+- **Regular presets** (`SolfeSinger_010_sustain.sfz` etc.) play every key at the requested pitch. The lowest and highest keys are played at up to 1/8 or 4 times speed, so their consonants and timbre change more.
+- **`_fold` presets** (`SolfeSinger_010_fold_sustain.sfz` etc.) limit playback to 0.5, 1, or 2 times speed. Keys more than one octave outside the sample range sound in another octave of the same syllable, so the output range is C2–F7 / MIDI 36–101.
 
-https://www.plogue.com/products/sforzando.html
+[Key ranges and examples](docs/REGISTERS.md)
 
-<br>
+The [listening page](demos/index.html) contains renders of the regular presets: all 12 semitones, a melody, high notes up to C8, and a five-second held note.
 
-## Presets
+## Solfege syllables
 
-* SolfeSinger_001_sustain.sfz
+| Note | C | C♯ / D♭ | D | D♯ / E♭ | E | F | F♯ / G♭ | G | G♯ / A♭ | A | A♯ / B♭ | B |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Spelling | Do | De | Re | Li | Mi | Fa | Fi | Sol | Sa | La | Chi | Si |
+| Japanese pronunciation | ド | デ | レ | リ | ミ | ファ | フィ | ソ | サ | ラ | チ | シ |
 
-  * Preset with sustained volume.
+## Models used to create the samples
 
-* SolfeSinger_001_decay.sfz
+| Instrument | Main synthesis model and speaker | Synthesized voices used for some consonants | Sample list |
+| --- | --- | --- | --- |
+| SolfeSinger 010 | [MeloTTS-Japanese](https://huggingface.co/myshell-ai/MeloTTS-Japanese) / JP | Qwen3-TTS Ryan and Ono Anna; [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) `jf_alpha` | [010 manifest](samples/010/manifest.json) |
+| SolfeSinger 011 | [Qwen3-TTS CustomVoice](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice) / Ono_Anna | Qwen3-TTS Ryan; Kokoro-82M `jf_alpha`; MeloTTS JP | [011 manifest](samples/011/manifest.json) |
 
-  * The volume gradually decays like a piano.
+The TTS consonants are kept, and the vowels are pitch-shifted with PSOLA and WORLD.
 
-<br>
+## Sample format
 
-## Credit
+Each voice has 66 WAVs shared by its four SFZ presets:
 
-Neural singing synthesizer NEUTRINO and NEUTRINO Singer Standard Library - めろう（Merrow） are used to create the sound source for SolfeSinger.
+- 42 per-pitch WAVs for MIDI 48–89 (`048_Do.wav` … `089_Fa.wav`)
+- 12 `_r05.wav` files for slower playback (MIDI 48–59) and 12 `_r2.wav` files for faster playback (MIDI 78–89). Their consonant length and attack timing are adjusted so they sound natural when played at a different speed.
 
-https://studio-neutrino.com/
+All WAVs are 48 kHz / 24-bit PCM / mono. The manifests list each WAV's syllable, loop points, and SHA-256.
 
-<br>
+## License
 
-## Contact information etc.
+The SFZ files, WAVs, and scripts are distributed under the [MIT License](LICENSE). No credit is required for music or videos made with the instruments. Keep LICENSE when redistributing the instrument files.
 
-* Twitter
+## For developers
 
-  * https://twitter.com/@frievea
+The SFZ files are generated from the sample manifests by `utils/build_sfz.py`. See [docs/BUILD.md](docs/BUILD.md).
 
-* Frieve.com
+## Contact information
 
-  * https://www.frieve.com/
-
-<br>
+- [X / Twitter](https://twitter.com/frievea)
+- [Frieve.com](https://www.frieve.com/)
 
 ---
 
-<br>
+SolfeSingerは日本語の固定ド階名唱を歌うSFZ音源です。現在の音源はSolfeSinger 010と011で、全88鍵のA0–C8 / MIDI 21–108に対応します。再生にはSFZプレーヤーだけが必要です。
 
-SolfeSingerは階名唱で歌うsfzインストゥルメントです。
+## ダウンロード
 
-MIDI鍵盤の演奏やDAWの入力を日本語のドレミで歌わせることができます。
+[GitHub Releases](https://github.com/Frieve-A/solfesinger/releases) から最新のzipをダウンロードし、フォルダ構成を保ったまま展開してください。再生にPython、GPU、TTSモデルは不要です。
 
-音感の習得を目的とした練習用途、ソルフェージュのコンテンツ作成などに利用することができます。
+## 使い方
 
-※ SolfeSingerを用いて作成したコンテンツにクレジット表記は不要です。
+以下のプリセットをSFZプレーヤーへ読み込み、MIDI鍵盤やDAWから日本語の固定ド階名唱を演奏してください。
 
-<br>
+| 音源 | 持続する | 徐々に減衰する | サンプルフォルダ |
+| --- | --- | --- | --- |
+| SolfeSinger 010 | [SolfeSinger_010_sustain.sfz](SolfeSinger_010_sustain.sfz) | [SolfeSinger_010_decay.sfz](SolfeSinger_010_decay.sfz) | [samples/010](samples/010) |
+| SolfeSinger 011 | [SolfeSinger_011_sustain.sfz](SolfeSinger_011_sustain.sfz) | [SolfeSinger_011_decay.sfz](SolfeSinger_011_decay.sfz) | [samples/011](samples/011) |
 
-## 使用方法
+SFZとサンプルフォルダの相対配置を保ってください。SFZを置いたフォルダの下に `samples/010` または `samples/011` が必要です。更新時はSFZとサンプルフォルダを一緒に差し替え、プレーヤーで読み込み直してください。
 
-以下のページより最新バージョンをダウンロードします。
+`sustain` は母音を持続し、`decay` は約3.5秒で減衰します。離鍵リリースは0.14秒で、ベロシティにも反応します。C4はMIDI 60、A4はMIDI 69 / 440 Hzです。
 
-https://github.com/Frieve-A/solfesinger/releases
+### 通常版と `_fold` 版
 
-1. ダウンロードしたzipファイルを解凍します。インストールは不要です。
+各音源にはC3–F6 / MIDI 48–89の音程別サンプルがあります。それ以外の鍵盤は、同じ階名のサンプルの再生速度を変えて鳴らします。
 
-2. zipファイルに含まれるsfzファイルをsfz対応のアプリケーションより開きます。
+- **通常版**（`SolfeSinger_010_sustain.sfz` など）は、全鍵盤を押した鍵盤どおりの音程で鳴らします。最低音・最高音付近は最大1/8倍速・4倍速で再生するため、子音や音色の変化が大きくなります。
+- **`_fold` 版**（`SolfeSinger_010_fold_sustain.sfz` など）は、再生速度を0.5・1・2倍速に制限します。サンプル範囲から1オクターブを超えて離れた鍵盤は同じ階名の別オクターブで鳴るため、出力音域はC2–F7 / MIDI 36–101です。
 
-<br>
+[音域と鍵盤割り当ての例](docs/REGISTERS.md)
 
-SolfeSingerはPlogue Sforzandoで動作確認を行っています。
+[試聴ページ](demos/index.html)に、通常版による12半音、メロディー、C8までの高音、5秒長音の演奏音声を置いています。
 
-ホストアプリケーションとしてはSforzandoの利用をおすすめします。
+## 階名
 
-https://www.plogue.com/products/sforzando.html
+| 音名 | C | C♯ / D♭ | D | D♯ / E♭ | E | F | F♯ / G♭ | G | G♯ / A♭ | A | A♯ / B♭ | B |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 表記 | Do | De | Re | Li | Mi | Fa | Fi | Sol | Sa | La | Chi | Si |
+| 読み | ド | デ | レ | リ | ミ | ファ | フィ | ソ | サ | ラ | チ | シ |
 
-<br>
+## 制作に使用したモデル
 
-## プリセット
+| 音源 | 主な合成モデル・話者 | 一部の子音に使用した合成音声 | サンプル一覧 |
+| --- | --- | --- | --- |
+| SolfeSinger 010 | [MeloTTS-Japanese](https://huggingface.co/myshell-ai/MeloTTS-Japanese) / JP | Qwen3-TTSのRyan・Ono Anna、[Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)の `jf_alpha` | [010のmanifest](samples/010/manifest.json) |
+| SolfeSinger 011 | [Qwen3-TTS CustomVoice](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice) / Ono_Anna | Qwen3-TTSのRyan、Kokoro-82Mの `jf_alpha`、MeloTTS JP | [011のmanifest](samples/011/manifest.json) |
 
-* SolfeSinger_001_sustain.sfz
+TTSの子音を保持し、母音をPSOLAとWORLDで音程加工しています。
 
-  * 音量が減衰なく持続します。
+## サンプル形式
 
-* SolfeSinger_001_decay.sfz
+各音源の66 WAVを4つのSFZプリセットで共有します。
 
-  * ピアノのように徐々に音量が減衰します。
+- MIDI 48–89の音程別WAV 42個（`048_Do.wav` … `089_Fa.wav`）
+- 低速再生用の `_r05.wav` 12個（MIDI 48–59）と高速再生用の `_r2.wav` 12個（MIDI 78–89）。速度を変えて再生したときに自然に聞こえるよう、子音の長さとアタックのタイミングを調整しています。
 
-<br>
+WAVはすべて48 kHz / 24-bit PCM / monoです。manifestには各WAVの階名、ループ点、SHA-256を記載しています。
 
-## クレジット
+## ライセンス
 
-SolfeSingerの音源作成には、ニューラルネットワークを用いた歌声シンセサイザーNEUTRINO、およびNEUTRINO Singer Standard Library - めろう（Merrow）を用いています。
+SFZ・WAV・スクリプトは [MIT License](LICENSE) で配布します。音源を使った音楽・動画へのクレジットは不要です。音源ファイルを再配布する場合はLICENSEを保持してください。
 
-https://studio-neutrino.com/
+## 開発者向け
 
-<br>
+SFZファイルは `utils/build_sfz.py` でサンプルのmanifestから生成しています。[docs/BUILD.md](docs/BUILD.md) を参照してください。
 
-## 連絡先など
+## 連絡先
 
-* Twitter
-
-  * https://twitter.com/@frievea
-
-* Frieve.com
-
-  * https://www.frieve.com/
+- [X / Twitter](https://twitter.com/frievea)
+- [Frieve.com](https://www.frieve.com/)

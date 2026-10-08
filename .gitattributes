@@ -1,0 +1,4 @@
+# Published SFZ and recipe checksums depend on the exact file bytes.
+*.sfz -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.wav binary

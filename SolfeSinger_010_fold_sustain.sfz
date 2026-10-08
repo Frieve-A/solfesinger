@@ -1,0 +1,448 @@
+// SolfeSinger 010_fold; max_one_octave; input MIDI 21-108; playback rates 0.5/1/2; compensated attack timing
+// Input/output/sample pitches and playback speeds: docs/registers.json
+<control>
+hint_ram_based=1
+<global>
+ampeg_attack=0.001 ampeg_release=0.14 amp_veltrack=70 volume=0
+loop_mode=loop_sustain pitch_keytrack=100
+ampeg_sustain=100
+<region>
+lokey=21 hikey=21 pitch_keycenter=33 sample=samples/010/057_La_r05.wav
+volume=0.750571
+offset=0
+loop_start=16899 loop_end=38498 end=64898
+<region>
+lokey=22 hikey=22 pitch_keycenter=34 sample=samples/010/058_Chi_r05.wav
+volume=0.627871
+offset=0
+loop_start=16849 loop_end=38471 end=64848
+<region>
+lokey=23 hikey=23 pitch_keycenter=35 sample=samples/010/059_Si_r05.wav
+volume=0.558284
+offset=0
+loop_start=16761 loop_end=38336 end=64760
+<region>
+lokey=24 hikey=24 pitch_keycenter=36 sample=samples/010/048_Do_r05.wav
+volume=0.551249
+offset=0
+loop_start=16920 loop_end=38568 end=64919
+<region>
+lokey=25 hikey=25 pitch_keycenter=37 sample=samples/010/049_De_r05.wav
+volume=0.751674
+offset=0
+loop_start=16709 loop_end=38181 end=64708
+<region>
+lokey=26 hikey=26 pitch_keycenter=38 sample=samples/010/050_Re_r05.wav
+volume=0.415248
+offset=0
+loop_start=16861 loop_end=38436 end=64860
+<region>
+lokey=27 hikey=27 pitch_keycenter=39 sample=samples/010/051_Li_r05.wav
+volume=0.751290
+offset=0
+loop_start=16672 loop_end=38270 end=64671
+<region>
+lokey=28 hikey=28 pitch_keycenter=40 sample=samples/010/052_Mi_r05.wav
+volume=0.792039
+offset=0
+loop_start=16863 loop_end=38414 end=64862
+<region>
+lokey=29 hikey=29 pitch_keycenter=41 sample=samples/010/053_Fa_r05.wav
+volume=0.887688
+offset=0
+loop_start=16734 loop_end=38449 end=64733
+<region>
+lokey=30 hikey=30 pitch_keycenter=42 sample=samples/010/054_Fi_r05.wav
+volume=0.729682
+offset=0
+loop_start=16812 loop_end=38346 end=64811
+<region>
+lokey=31 hikey=31 pitch_keycenter=43 sample=samples/010/055_Sol_r05.wav
+volume=0.535488
+offset=0
+loop_start=16919 loop_end=38469 end=64918
+<region>
+lokey=32 hikey=32 pitch_keycenter=44 sample=samples/010/056_Sa_r05.wav
+volume=0.668729
+offset=0
+loop_start=16782 loop_end=38278 end=64781
+<region>
+lokey=33 hikey=33 pitch_keycenter=45 sample=samples/010/057_La_r05.wav
+volume=0.750571
+offset=0
+loop_start=16899 loop_end=38498 end=64898
+<region>
+lokey=34 hikey=34 pitch_keycenter=46 sample=samples/010/058_Chi_r05.wav
+volume=0.627871
+offset=0
+loop_start=16849 loop_end=38471 end=64848
+<region>
+lokey=35 hikey=35 pitch_keycenter=47 sample=samples/010/059_Si_r05.wav
+volume=0.558284
+offset=0
+loop_start=16761 loop_end=38336 end=64760
+<region>
+lokey=36 hikey=36 pitch_keycenter=48 sample=samples/010/048_Do_r05.wav
+volume=0.551249
+offset=0
+loop_start=16920 loop_end=38568 end=64919
+<region>
+lokey=37 hikey=37 pitch_keycenter=49 sample=samples/010/049_De_r05.wav
+volume=0.751674
+offset=0
+loop_start=16709 loop_end=38181 end=64708
+<region>
+lokey=38 hikey=38 pitch_keycenter=50 sample=samples/010/050_Re_r05.wav
+volume=0.415248
+offset=0
+loop_start=16861 loop_end=38436 end=64860
+<region>
+lokey=39 hikey=39 pitch_keycenter=51 sample=samples/010/051_Li_r05.wav
+volume=0.751290
+offset=0
+loop_start=16672 loop_end=38270 end=64671
+<region>
+lokey=40 hikey=40 pitch_keycenter=52 sample=samples/010/052_Mi_r05.wav
+volume=0.792039
+offset=0
+loop_start=16863 loop_end=38414 end=64862
+<region>
+lokey=41 hikey=41 pitch_keycenter=53 sample=samples/010/053_Fa_r05.wav
+volume=0.887688
+offset=0
+loop_start=16734 loop_end=38449 end=64733
+<region>
+lokey=42 hikey=42 pitch_keycenter=54 sample=samples/010/054_Fi_r05.wav
+volume=0.729682
+offset=0
+loop_start=16812 loop_end=38346 end=64811
+<region>
+lokey=43 hikey=43 pitch_keycenter=55 sample=samples/010/055_Sol_r05.wav
+volume=0.535488
+offset=0
+loop_start=16919 loop_end=38469 end=64918
+<region>
+lokey=44 hikey=44 pitch_keycenter=56 sample=samples/010/056_Sa_r05.wav
+volume=0.668729
+offset=0
+loop_start=16782 loop_end=38278 end=64781
+<region>
+lokey=45 hikey=45 pitch_keycenter=57 sample=samples/010/057_La_r05.wav
+volume=0.750571
+offset=0
+loop_start=16899 loop_end=38498 end=64898
+<region>
+lokey=46 hikey=46 pitch_keycenter=58 sample=samples/010/058_Chi_r05.wav
+volume=0.627871
+offset=0
+loop_start=16849 loop_end=38471 end=64848
+<region>
+lokey=47 hikey=47 pitch_keycenter=59 sample=samples/010/059_Si_r05.wav
+volume=0.558284
+offset=0
+loop_start=16761 loop_end=38336 end=64760
+<region>
+lokey=48 hikey=48 pitch_keycenter=48 sample=samples/010/048_Do.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52848 end=79199
+<region>
+lokey=49 hikey=49 pitch_keycenter=49 sample=samples/010/049_De.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52672 end=79199
+<region>
+lokey=50 hikey=50 pitch_keycenter=50 sample=samples/010/050_Re.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52775 end=79199
+<region>
+lokey=51 hikey=51 pitch_keycenter=51 sample=samples/010/051_Li.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52798 end=79199
+<region>
+lokey=52 hikey=52 pitch_keycenter=52 sample=samples/010/052_Mi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52751 end=79199
+<region>
+lokey=53 hikey=53 pitch_keycenter=53 sample=samples/010/053_Fa.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52915 end=79199
+<region>
+lokey=54 hikey=54 pitch_keycenter=54 sample=samples/010/054_Fi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52734 end=79199
+<region>
+lokey=55 hikey=55 pitch_keycenter=55 sample=samples/010/055_Sol.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52750 end=79199
+<region>
+lokey=56 hikey=56 pitch_keycenter=56 sample=samples/010/056_Sa.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52696 end=79199
+<region>
+lokey=57 hikey=57 pitch_keycenter=57 sample=samples/010/057_La.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52799 end=79199
+<region>
+lokey=58 hikey=58 pitch_keycenter=58 sample=samples/010/058_Chi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52822 end=79199
+<region>
+lokey=59 hikey=59 pitch_keycenter=59 sample=samples/010/059_Si.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52775 end=79199
+<region>
+lokey=60 hikey=60 pitch_keycenter=60 sample=samples/010/060_Do.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52848 end=79199
+<region>
+lokey=61 hikey=61 pitch_keycenter=61 sample=samples/010/061_De.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52845 end=79199
+<region>
+lokey=62 hikey=62 pitch_keycenter=62 sample=samples/010/062_Re.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52775 end=79199
+<region>
+lokey=63 hikey=63 pitch_keycenter=63 sample=samples/010/063_Li.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52798 end=79199
+<region>
+lokey=64 hikey=64 pitch_keycenter=64 sample=samples/010/064_Mi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52751 end=79199
+<region>
+lokey=65 hikey=65 pitch_keycenter=65 sample=samples/010/065_Fa.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52778 end=79199
+<region>
+lokey=66 hikey=66 pitch_keycenter=66 sample=samples/010/066_Fi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52734 end=79199
+<region>
+lokey=67 hikey=67 pitch_keycenter=67 sample=samples/010/067_Sol.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52750 end=79199
+<region>
+lokey=68 hikey=68 pitch_keycenter=68 sample=samples/010/068_Sa.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52812 end=79199
+<region>
+lokey=69 hikey=69 pitch_keycenter=69 sample=samples/010/069_La.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52799 end=79199
+<region>
+lokey=70 hikey=70 pitch_keycenter=70 sample=samples/010/070_Chi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52822 end=79199
+<region>
+lokey=71 hikey=71 pitch_keycenter=71 sample=samples/010/071_Si.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52775 end=79199
+<region>
+lokey=72 hikey=72 pitch_keycenter=72 sample=samples/010/072_Do.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52757 end=79199
+<region>
+lokey=73 hikey=73 pitch_keycenter=73 sample=samples/010/073_De.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52759 end=79199
+<region>
+lokey=74 hikey=74 pitch_keycenter=74 sample=samples/010/074_Re.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52775 end=79199
+<region>
+lokey=75 hikey=75 pitch_keycenter=75 sample=samples/010/075_Li.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52798 end=79199
+<region>
+lokey=76 hikey=76 pitch_keycenter=76 sample=samples/010/076_Mi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52823 end=79199
+<region>
+lokey=77 hikey=77 pitch_keycenter=77 sample=samples/010/077_Fa.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52778 end=79199
+<region>
+lokey=78 hikey=78 pitch_keycenter=78 sample=samples/010/078_Fi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52799 end=79199
+<region>
+lokey=79 hikey=79 pitch_keycenter=79 sample=samples/010/079_Sol.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52811 end=79199
+<region>
+lokey=80 hikey=80 pitch_keycenter=80 sample=samples/010/080_Sa.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52812 end=79199
+<region>
+lokey=81 hikey=81 pitch_keycenter=81 sample=samples/010/081_La.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52799 end=79199
+<region>
+lokey=82 hikey=82 pitch_keycenter=82 sample=samples/010/082_Chi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52822 end=79199
+<region>
+lokey=83 hikey=83 pitch_keycenter=83 sample=samples/010/083_Si.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52775 end=79199
+<region>
+lokey=84 hikey=84 pitch_keycenter=84 sample=samples/010/084_Do.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52802 end=79199
+<region>
+lokey=85 hikey=85 pitch_keycenter=85 sample=samples/010/085_De.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52802 end=79199
+<region>
+lokey=86 hikey=86 pitch_keycenter=86 sample=samples/010/086_Re.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52815 end=79199
+<region>
+lokey=87 hikey=87 pitch_keycenter=87 sample=samples/010/087_Li.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52798 end=79199
+<region>
+lokey=88 hikey=88 pitch_keycenter=88 sample=samples/010/088_Mi.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52787 end=79199
+<region>
+lokey=89 hikey=89 pitch_keycenter=89 sample=samples/010/089_Fa.wav
+volume=0.000000
+offset=0
+loop_start=31200 loop_end=52812 end=79199
+<region>
+lokey=90 hikey=90 pitch_keycenter=78 sample=samples/010/078_Fi_r2.wav
+volume=-0.285721
+offset=128
+loop_start=60142 loop_end=81741 end=108013
+<region>
+lokey=91 hikey=91 pitch_keycenter=79 sample=samples/010/079_Sol_r2.wav
+volume=-1.904692
+offset=128
+loop_start=60116 loop_end=81727 end=107987
+<region>
+lokey=92 hikey=92 pitch_keycenter=80 sample=samples/010/080_Sa_r2.wav
+volume=-1.994584
+offset=128
+loop_start=60114 loop_end=81726 end=107985
+<region>
+lokey=93 hikey=93 pitch_keycenter=81 sample=samples/010/081_La_r2.wav
+volume=-1.959686
+offset=128
+loop_start=60107 loop_end=81706 end=107978
+<region>
+lokey=94 hikey=94 pitch_keycenter=82 sample=samples/010/082_Chi_r2.wav
+volume=-0.369763
+offset=128
+loop_start=60151 loop_end=81773 end=108022
+<region>
+lokey=95 hikey=95 pitch_keycenter=83 sample=samples/010/083_Si_r2.wav
+volume=-0.613890
+offset=128
+loop_start=60133 loop_end=81708 end=108004
+<region>
+lokey=96 hikey=96 pitch_keycenter=84 sample=samples/010/084_Do_r2.wav
+volume=-2.352870
+offset=128
+loop_start=60128 loop_end=81730 end=107999
+<region>
+lokey=97 hikey=97 pitch_keycenter=85 sample=samples/010/085_De_r2.wav
+volume=-0.777932
+offset=128
+loop_start=60147 loop_end=81749 end=108018
+<region>
+lokey=98 hikey=98 pitch_keycenter=86 sample=samples/010/086_Re_r2.wav
+volume=-0.489354
+offset=128
+loop_start=60121 loop_end=81736 end=107992
+<region>
+lokey=99 hikey=99 pitch_keycenter=87 sample=samples/010/087_Li_r2.wav
+volume=-0.169516
+offset=128
+loop_start=60116 loop_end=81714 end=107987
+<region>
+lokey=100 hikey=100 pitch_keycenter=88 sample=samples/010/088_Mi_r2.wav
+volume=0.206989
+offset=128
+loop_start=60113 loop_end=81700 end=107984
+<region>
+lokey=101 hikey=101 pitch_keycenter=89 sample=samples/010/089_Fa_r2.wav
+volume=-1.941645
+offset=128
+loop_start=60135 loop_end=81747 end=108006
+<region>
+lokey=102 hikey=102 pitch_keycenter=90 sample=samples/010/078_Fi_r2.wav
+volume=-0.285721
+offset=128
+loop_start=60142 loop_end=81741 end=108013
+<region>
+lokey=103 hikey=103 pitch_keycenter=91 sample=samples/010/079_Sol_r2.wav
+volume=-1.904692
+offset=128
+loop_start=60116 loop_end=81727 end=107987
+<region>
+lokey=104 hikey=104 pitch_keycenter=92 sample=samples/010/080_Sa_r2.wav
+volume=-1.994584
+offset=128
+loop_start=60114 loop_end=81726 end=107985
+<region>
+lokey=105 hikey=105 pitch_keycenter=93 sample=samples/010/081_La_r2.wav
+volume=-1.959686
+offset=128
+loop_start=60107 loop_end=81706 end=107978
+<region>
+lokey=106 hikey=106 pitch_keycenter=94 sample=samples/010/082_Chi_r2.wav
+volume=-0.369763
+offset=128
+loop_start=60151 loop_end=81773 end=108022
+<region>
+lokey=107 hikey=107 pitch_keycenter=95 sample=samples/010/083_Si_r2.wav
+volume=-0.613890
+offset=128
+loop_start=60133 loop_end=81708 end=108004
+<region>
+lokey=108 hikey=108 pitch_keycenter=96 sample=samples/010/084_Do_r2.wav
+volume=-2.352870
+offset=128
+loop_start=60128 loop_end=81730 end=107999

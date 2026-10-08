@@ -1,0 +1,5 @@
+# Python packages for utils/build_sfz.py. SFZ playback does not require Python.
+numpy==2.2.4
+scipy==1.15.2
+soundfile==0.13.1
+pyloudnorm==0.1.1
